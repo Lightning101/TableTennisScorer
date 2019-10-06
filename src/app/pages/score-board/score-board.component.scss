@@ -1,0 +1,60 @@
+:host {
+    background-image: url('../../../assets/tabletenisback2.jpg');
+    size: 100% 100%;
+    display: block;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 3vh;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+mat-card {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+mat-card-title {
+    font-size: 6vh !important;
+}
+
+mat-card-content {
+    font-size: 3vh;
+    text-align: center;
+}
+
+mat-form-field {
+    border: 7px solid white;
+    border-radius: 25px;
+    padding: 9px;
+    margin: 5px;
+    width: 100%;
+}
+
+.set-name-button {
+    margin-left: 2%;
+}
+
+.match-margin {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 11px solid white;
+    border-radius: 25px;
+}
+
+.custom-margin {
+    margin: 10px;
+}
+
+.custom-score {
+    height: 88%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 44vh;
+}
