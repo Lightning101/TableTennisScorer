@@ -7,7 +7,7 @@ import { ControllerGaurdService } from './pages/gaurds/controller-gaurd.service'
 
 
 const routes: Routes = [
-  { path: 'contoller', component: ScoreBoardControllerComponent, canActivate:[ControllerGaurdService]},
+  { path: 'controller', component: ScoreBoardControllerComponent, canActivate:[ControllerGaurdService]},
   { path: 'scoreboard', component: ScoreBoardComponent},
   { path: '',
     redirectTo: '/scoreboard',

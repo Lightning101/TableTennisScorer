@@ -14,9 +14,10 @@ export class ScoreService {
   private playerOneScoreSubject: Subject<any> = new Subject<any>();
   private playerTwoScoreSubject: Subject<any> = new Subject<any>();
   private setsSubject: BehaviorSubject<Set[]> = new BehaviorSubject<Set[]>([]);
+  private ipAddress = window.location.hostname + (window.location.port? ':' + window.location.port : '');
 
   constructor() {
-    const socket = socketIo('http://localhost:3000/');
+    const socket = socketIo(this.ipAddress);
     socket.on('matchUpdate', (data) => this.matchSubject.next(data));
 
     socket.on('playerOneScoreUpdate', (data) => this.playerOneScoreSubject.next(data));
